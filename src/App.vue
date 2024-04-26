@@ -5,7 +5,7 @@ import SiteFooter from './components/SiteFooter.vue'
 import useStore from './store'
 
 const { selectedImage } = useStore()
-const imageRef = ref(null)
+const imageRef = ref<HTMLElement | null>(null)
 const isWidthAdjusted = ref(false)
 const isHeightAdjusted = ref(false)
 const isZoomed = ref(false)
