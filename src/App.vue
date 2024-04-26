@@ -2,7 +2,7 @@
 import { ref } from 'vue'
 import SiteHeader from './components/SiteHeader.vue'
 import SiteFooter from './components/SiteFooter.vue'
-import useStore from './store.js'
+import useStore from './store.ts'
 
 const { selectedImage } = useStore()
 const imageRef = ref(null)

@@ -7,11 +7,11 @@
 </template>
 
 <script setup lang="ts">
-import useStore from '../store.js'
+import useStore from '../store.ts'
 
 const { searchedImages, selectedImage } = useStore()
 
-const selectImage = (image) => {
+const selectImage = (image: string) => {
   selectedImage.value = image
 }
 </script>
