@@ -12,7 +12,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import axios from 'axios'
-import useStore from '../store.js'
+import useStore from '../store.ts'
 const { searchedImages } = useStore()
 const query = ref('')
 
